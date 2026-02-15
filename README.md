@@ -1,9 +1,12 @@
-# NOCI 
+# Non-Orthogonal Configuration Interaction (NOCI) 
 Wave function ansatz is of the form:
 $$|\psi\rangle = \sum_i^K c_i U_i|HF\rangle$$
 where the $U_i$'s are RHF-type orbital rotations
 
 * Matrix elements are computed with generalized Wick contractions
+* MLX version is just a test beta...
+  * Currently build a more optimized numba version which allows UHF and GHF type rotations
+  * This should be more scalable
 ```python
 from pyscf import gto, scf, fci, ao2mo
 from MLX_functions import *
