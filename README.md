@@ -5,8 +5,8 @@ where the $U_i$'s are RHF-type orbital rotations
 
 * Matrix elements are computed with generalized Wick contractions
 * MLX version is just a test beta...
-  * Currently build a more optimized numba version which allows UHF and GHF type rotations
-  * This should be more scalable
+  * Currently building a more optimized numba version which allows UHF and GHF type rotations
+  * This version will be more scalable to larger system
 ```python
 from pyscf import gto, scf, fci, ao2mo
 from MLX_functions import *
