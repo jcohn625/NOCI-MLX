@@ -1,7 +1,9 @@
 # NOCI 
-Wave function ansatz is of the form:
-$$|\psi\rangle = \sum_i^K c_i U_i|HF\rangle$$
-where the $U_i$'s are RHF-type orbital rotations
+Wave function ansatz is of the form:\\
+$$|\psi\rangle = \sum_i^K c_i U_i|HF\rangle$$\\
+where the $U_i$'s are RHF-type orbital rotations\\
+\\
+* Matrix elements are computed with generalized Wick contractions
 ```python
 from pyscf import gto, scf, fci, ao2mo
 from MLX_functions import *
